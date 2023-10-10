@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+app-platform/.yarn/releases
+app-platform/.yarn/releases
+app-platform/.yarn/releases
+app-platform/.yarn/releases
+app-platform/.yarn/releases/yarn-3.4.1.cjs
+
+app-platform/apps/next/plugins/swc_plugin_reanimated.wasm
