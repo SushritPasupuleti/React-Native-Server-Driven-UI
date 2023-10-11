@@ -6,6 +6,9 @@
 		"packages/*"
 	],
 	"devDependencies": {
+		"@babel/cli": "^7.23.0",
+		"@babel/core": "^7.23.0",
+		"@babel/preset-react": "^7.22.15",
 		"@types/react": "^18.2.21",
 		"@types/react-native": "^0.72.2",
 		"eslint": "^8.21.0",
@@ -16,7 +19,11 @@
 	},
 	"scripts": {
 		"native": "cd apps/expo && yarn start",
-		"web": "cd apps/next && yarn next"
+		"native:run": "cd apps/expo && npx expo start",
+		"web": "cd apps/next && yarn next",
+		"build:sdui": "npx babel --presets=@babel/preset-env,@babel/preset-react ./packages/app/server-driven/ -d ./packages/app/server-driven-compiled/",
+		"server:dev": "cd apps/server && yarn dev",
+		"server:start": "cd apps/server && yarn start"
 	},
 	"resolutions": {
 		"metro": "~0.76.7",
@@ -26,5 +33,8 @@
 		"**/expo-router",
 		"**/expo-router/**"
 	],
-	"packageManager": "yarn@3.4.1"
+	"packageManager": "yarn@3.4.1",
+	"dependencies": {
+		"react-native-wormhole": "^0.2.0"
+	}
 }

@@ -15,7 +15,9 @@ export function HomeScreen() {
 			</View>
 			<View className="h-[32px]" />
 			<Row className="space-x-8">
-				<TextLink href="/user/test-user">Load SDUI with this Link</TextLink>
+				<TextLink href="/user/test-user">
+					Load SDUI with this Link ➡️
+				</TextLink>
 			</Row>
 		</View>
 	)
